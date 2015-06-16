@@ -7,6 +7,9 @@
 #'   will also be used as the title shown in the browser's title bar. If you
 #'   want that to be different from the text in the dashboard header bar, set
 #'   the \code{title} in \code{\link{dashboardPage}}.
+#' @param titleWidth The width of the title area. This must either be a number
+#'   which specifies the width in pixels, or a string that specifies the width
+#'   in CSS units.
 #' @param disable If \code{TRUE}, don't display the header bar.
 #' @param ... Items to put in the header. Should be \code{\link{dropdownMenu}}s.
 #' @param .list An optional list containing items to put in the header. Same as
@@ -83,11 +86,34 @@
 #' )
 #' }
 #' @export
-dashboardHeader <- function(..., title = NULL, disable = FALSE, .list = NULL) {
+dashboardHeader <- function(..., title = NULL, titleWidth = NULL, disable = FALSE, .list = NULL) {
   items <- c(list(...), .list)
   lapply(items, tagAssert, type = "li", class = "dropdown")
 
+  titleWidth <- validateCssUnit(titleWidth)
+
+  # Set up custom CSS for custom width.
+  custom_css <- NULL
+  if (!is.null(titleWidth)) {
+    # This CSS is derived from the header-related instances of '230px' (the
+    # default sidebar width) from inst/AdminLTE/AdminLTE.css. One change is that
+    # instead making changes to the global settings, we've put them in a media
+    # query (min-width: 768px), so that it won't override other media queries
+    # (like max-width: 767px) that work for narrower screens.
+    custom_css <- tags$head(tags$style(HTML(gsub("_WIDTH_", titleWidth, fixed = TRUE, '
+      @media (min-width: 768px) {
+        .main-header > .navbar {
+          margin-left: _WIDTH_;
+        }
+        .main-header .logo {
+          width: _WIDTH_;
+        }
+      }
+    '))))
+  }
+
   tags$header(class = "main-header",
+    custom_css,
     style = if (disable) "display: none;",
     span(class = "logo", title),
     tags$nav(class = "navbar navbar-static-top", role = "navigation",

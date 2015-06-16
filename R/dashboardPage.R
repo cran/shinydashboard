@@ -32,8 +32,8 @@ dashboardPage <- function(header, sidebar, body, title = NULL,
   skin = c("blue", "black", "purple", "green", "red", "yellow")) {
 
   tagAssert(header, type = "header", class = "main-header")
-  tagAssert(sidebar, type = "section", class = "sidebar")
-  tagAssert(body, type = "section", class = "content")
+  tagAssert(sidebar, type = "aside", class = "main-sidebar")
+  tagAssert(body, type = "div", class = "content-wrapper")
   skin <- match.arg(skin)
 
   extractTitle <- function(header) {
@@ -51,16 +51,10 @@ dashboardPage <- function(header, sidebar, body, title = NULL,
 
   title <- title %OR% extractTitle(header)
 
-  content <- tagList(
+  content <- div(class = "wrapper",
     header,
-    div(class = "wrapper row-offcanvas row-offcanvas-left",
-      tags$aside(class = "main-sidebar sidebar-offcanvas",
-        sidebar
-      ),
-      tags$aside(class = "content-wrapper",
-        body
-      )
-    )
+    sidebar,
+    body
   )
 
   addDeps(

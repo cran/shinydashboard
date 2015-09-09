@@ -144,6 +144,8 @@ sidebarUserPanel <- function(name, subtitle = NULL, image = NULL) {
       )
     },
     div(class = "pull-left info",
+      # If no image, move text to the left: by overriding default left:55px
+      style = if (is.null(image)) "left: 4px",
       p(name),
       subtitle
     )
@@ -265,6 +267,7 @@ menuItem <- function(text, ..., icon = NULL, badgeLabel = NULL, badgeColor = "gr
   isTabItem <- FALSE
   target <- NULL
   if (!is.null(tabName)) {
+    validateTabName(tabName)
     isTabItem <- TRUE
     href <- paste0("#shiny-tab-", tabName)
   } else if (is.null(href)) {
@@ -328,6 +331,7 @@ menuSubItem <- function(text, tabName = NULL, href = NULL, newtab = TRUE,
   isTabItem <- FALSE
   target <- NULL
   if (!is.null(tabName)) {
+    validateTabName(tabName)
     isTabItem <- TRUE
     href <- paste0("#shiny-tab-", tabName)
   } else if (is.null(href)) {

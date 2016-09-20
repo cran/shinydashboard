@@ -1,12 +1,12 @@
-fb1ccabce94f54c8d08bb075d4563e0e *DESCRIPTION
+e6ba4c38bbda8b90a5cd630ba4089ff5 *DESCRIPTION
 4c2e3c24953ef5c968f8b1fa58a3eb5f *LICENSE
 7b13e6353f630a4c48c686b647499740 *NAMESPACE
-13b60fa55ec554a7189b2f4bf7cb7c4e *NEWS.md
+2f158f7041cd510b8b8d86e6edea0632 *NEWS.md
 ae7df0830983f1875480b034166802e5 *R/boxes.R
 58fdd0dc699149e29df8b3d771587339 *R/dashboardBody.R
 4c0637ed59bf94c73d0506374d15b675 *R/dashboardHeader.R
 7f9f1494d3897b3947cafd2569593105 *R/dashboardPage.R
-03faefddafb1893a27285dfee006502f *R/dashboardSidebar.R
+232eba3ab3cd9c4b39f3d696c8ef5e0e *R/dashboardSidebar.R
 91ec7a0c8b2830debd15424395bb84b5 *R/deps.R
 e86f2a08d970d384a09e5679a318eac3 *R/menuOutput.R
 ebc1be5aa29851745caae82ebb9fb079 *R/shinydashboard-package.r
@@ -47,7 +47,7 @@ fb2ff1d2957665bd9dcff668c5662996 *man/renderDropdownMenu.Rd
 0cb31561e9501314920202667edbc38c *man/renderMenu.Rd
 dfc668a51be82b8630fbc3f128afc416 *man/renderValueBox.Rd
 d78ead8830d67f8e48f413810c54f1ee *man/shinydashboard.Rd
-983dfc82467a35213ecb6fee28b90f0e *man/sidebarMenu.Rd
+0275d2f5a62dca0c13fb808c7a50930e *man/sidebarMenu.Rd
 033d22d046d99d15eea4a3bb6655b17e *man/sidebarMenuOutput.Rd
 3618d52ee3cfde5cd2f16fc0667b180d *man/sidebarSearchForm.Rd
 7b4dd8d7d99c2735a8286d8e7fa14175 *man/sidebarUserPanel.Rd

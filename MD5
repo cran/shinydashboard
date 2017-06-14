@@ -1,7 +1,7 @@
-c26f52fd9ba630f6e95a976a6f740c90 *DESCRIPTION
+57d0382e19f666648e6ef8ad7232cc71 *DESCRIPTION
 d8eaa11f2d7c4e0258486389013752bc *LICENSE
 7b13e6353f630a4c48c686b647499740 *NAMESPACE
-e600c06c8cd8ccb51aa8eaec7d988e00 *NEWS.md
+9d946ae7618aef6ff255d7a593b8730e *NEWS.md
 ae7df0830983f1875480b034166802e5 *R/boxes.R
 58fdd0dc699149e29df8b3d771587339 *R/dashboardBody.R
 1a7ab967b3934e943027d9760a7eb268 *R/dashboardHeader.R
@@ -30,10 +30,10 @@ b5a02317c3d2de0275cfd1efef086f6f *inst/AdminLTE/fonts/Source_Sans_Pro_400italic.
 e7dc82fa8534c925644f9af433214d20 *inst/AdminLTE/fonts/Source_Sans_Pro_600italic.ttf
 206f41ff7cdb7df5dbfeda33c847b793 *inst/AdminLTE/fonts/Source_Sans_Pro_700.ttf
 02c24fb3f5504d1bfc8f050d0392571b *inst/shinydashboard.css
-16aa9a0192b1155d69e2827e742e6d19 *inst/shinydashboard.js
-ee573fbcaf1e2a101ef6aa8759901dcd *inst/shinydashboard.js.map
-a8842a94344c58a223624bf6ceea5fae *inst/shinydashboard.min.js
-76b8c5b3ffcd1fb40cbfb4d61806a86e *inst/shinydashboard.min.js.map
+fe5211d2e9ac7cca4f7eccdfccb5d3c8 *inst/shinydashboard.js
+99a317ddfdacd13efb7debf79d711b04 *inst/shinydashboard.js.map
+d3b4b8ff39569a5a29f213651bead0f3 *inst/shinydashboard.min.js
+1044c5f8a67f299792d17d336808f601 *inst/shinydashboard.min.js.map
 ecdb22b85accfb4a1e13b81be547ef5c *man/box.Rd
 e03b63c24d7af853adcd8ebf34cc8e69 *man/dashboardBody.Rd
 01c05320aa21ed88f4eae4477f006339 *man/dashboardHeader.Rd

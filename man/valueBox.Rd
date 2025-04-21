@@ -4,15 +4,14 @@
 \alias{valueBox}
 \title{Create a value box for the main body of a dashboard.}
 \usage{
-valueBox(value, subtitle, icon = NULL, color = "aqua", width = 4,
-  href = NULL)
+valueBox(value, subtitle, icon = NULL, color = "aqua", width = 4, href = NULL)
 }
 \arguments{
 \item{value}{The value to display in the box. Usually a number or short text.}
 
 \item{subtitle}{Subtitle text.}
 
-\item{icon}{An icon tag, created by \code{\link[shiny]{icon}}.}
+\item{icon}{An icon tag, created by \code{\link[shiny:icon]{shiny::icon()}}.}
 
 \item{color}{A color for the box. Valid colors are listed in
 \link{validColors}.}
@@ -31,9 +30,11 @@ subtitle beneath, and a large icon on the right side. Value boxes are meant
 to be placed in the main body of a dashboard.
 }
 \seealso{
-\code{\link{box}} for usage examples.
+\code{\link[=box]{box()}} for usage examples.
 
-Other boxes: \code{\link{box}}, \code{\link{infoBox}},
-  \code{\link{tabBox}}
+Other boxes: 
+\code{\link{box}()},
+\code{\link{infoBox}()},
+\code{\link{tabBox}()}
 }
 \concept{boxes}

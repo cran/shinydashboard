@@ -4,15 +4,20 @@
 \alias{messageItem}
 \title{Create a message item to place in a dropdown message menu}
 \usage{
-messageItem(from, message, icon = shiny::icon("user"), time = NULL,
-  href = NULL)
+messageItem(
+  from,
+  message,
+  icon = shiny::icon("user"),
+  time = NULL,
+  href = NULL
+)
 }
 \arguments{
 \item{from}{Who the message is from.}
 
 \item{message}{Text of the message.}
 
-\item{icon}{An icon tag, created by \code{\link[shiny]{icon}}.}
+\item{icon}{An icon tag, created by \code{\link[shiny:icon]{shiny::icon()}}.}
 
 \item{time}{String representing the time the message was sent. Any string may
 be used. For example, it could be a relative date/time like "5 minutes",
@@ -25,9 +30,10 @@ If NULL, no time will be displayed.}
 Create a message item to place in a dropdown message menu
 }
 \seealso{
-\code{\link{dashboardHeader}} for example usage.
+\code{\link[=dashboardHeader]{dashboardHeader()}} for example usage.
 
-Other menu items: \code{\link{notificationItem}},
-  \code{\link{taskItem}}
+Other menu items: 
+\code{\link{notificationItem}()},
+\code{\link{taskItem}()}
 }
 \concept{menu items}

@@ -4,9 +4,16 @@
 \alias{infoBox}
 \title{Create an info box for the main body of a dashboard.}
 \usage{
-infoBox(title, value = NULL, subtitle = NULL,
-  icon = shiny::icon("bar-chart"), color = "aqua", width = 4,
-  href = NULL, fill = FALSE)
+infoBox(
+  title,
+  value = NULL,
+  subtitle = NULL,
+  icon = shiny::icon("bar-chart"),
+  color = "aqua",
+  width = 4,
+  href = NULL,
+  fill = FALSE
+)
 }
 \arguments{
 \item{title}{Title text.}
@@ -15,7 +22,7 @@ infoBox(title, value = NULL, subtitle = NULL,
 
 \item{subtitle}{Subtitle text (optional).}
 
-\item{icon}{An icon tag, created by \code{\link[shiny]{icon}}.}
+\item{icon}{An icon tag, created by \code{\link[shiny:icon]{shiny::icon()}}.}
 
 \item{color}{A color for the box. Valid colors are listed in
 \link{validColors}.}
@@ -40,9 +47,11 @@ An info box displays a large icon on the left side, and a title, value
 boxes are meant to be placed in the main body of a dashboard.
 }
 \seealso{
-\code{\link{box}} for usage examples.
+\code{\link[=box]{box()}} for usage examples.
 
-Other boxes: \code{\link{box}}, \code{\link{tabBox}},
-  \code{\link{valueBox}}
+Other boxes: 
+\code{\link{box}()},
+\code{\link{tabBox}()},
+\code{\link{valueBox}()}
 }
 \concept{boxes}
